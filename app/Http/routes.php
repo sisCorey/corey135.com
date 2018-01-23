@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/index');
+    // return view('welcome');
 });
+
+Route::get('/index', 'IndexController@index');
+Route::resource('/photo', 'Home\PhotoController');
+
+Route::get('/admin', 'Admin\AdminAuthController@index');
+Route::resource('/admin/photo', 'Admin\PhotoController');
+

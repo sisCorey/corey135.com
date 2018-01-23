@@ -46,43 +46,43 @@ return [
 
     'connections' => [
 
-        'sqlite' => [
-            'driver'   => 'sqlite',
-            'database' => storage_path('database.sqlite'),
-            'prefix'   => '',
-        ],
+        // 'sqlite' => [
+        //     'driver'   => 'sqlite',
+        //     'database' => storage_path('database.sqlite'),
+        //     'prefix'   => '',
+        // ],
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
+            'host'      => env('DB_HOST', '180.235.137.34'),
+            'database'  => env('DB_DATABASE', 'corey135'),
+            'username'  => env('DB_USERNAME', 'corey'),
+            'password'  => env('DB_PASSWORD', 'dreams'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
+            'prefix'    => 'c_',
             'strict'    => false,
         ],
 
-        'pgsql' => [
-            'driver'   => 'pgsql',
-            'host'     => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'charset'  => 'utf8',
-            'prefix'   => '',
-            'schema'   => 'public',
-        ],
+        // 'pgsql' => [
+        //     'driver'   => 'pgsql',
+        //     'host'     => env('DB_HOST', 'localhost'),
+        //     'database' => env('DB_DATABASE', 'forge'),
+        //     'username' => env('DB_USERNAME', 'forge'),
+        //     'password' => env('DB_PASSWORD', ''),
+        //     'charset'  => 'utf8',
+        //     'prefix'   => '',
+        //     'schema'   => 'public',
+        // ],
 
-        'sqlsrv' => [
-            'driver'   => 'sqlsrv',
-            'host'     => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'prefix'   => '',
-        ],
+        // 'sqlsrv' => [
+        //     'driver'   => 'sqlsrv',
+        //     'host'     => env('DB_HOST', 'localhost'),
+        //     'database' => env('DB_DATABASE', 'forge'),
+        //     'username' => env('DB_USERNAME', 'forge'),
+        //     'password' => env('DB_PASSWORD', ''),
+        //     'prefix'   => '',
+        // ],
 
     ],
 
